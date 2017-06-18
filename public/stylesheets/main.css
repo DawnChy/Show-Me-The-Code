@@ -1,0 +1,62 @@
+/*header-start*/
+.nav-div{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.nav-div>nav#bs-navbar{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.logo{
+    /*width: 400px;*/
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.logo a{
+    display: inline-block;
+}
+.logo a img{
+    display: inline-block;
+    width: 400px;
+    height: 100px;
+}
+nav .nav li a{
+    line-height: 30px;
+    color: #563d7c;
+}
+.strong{
+    font-size: larger;
+}
+.words{
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+.words div h1{
+    line-height: 90px;
+    color: #444444;
+}
+/*identity 身份*/
+.identity{
+    padding: 20px;
+}
+
+/*header-end*/
+hr{
+    border-top-color: #46b78d;
+}
+/*footer-start*/
+footer{
+    width: 100%;
+    background-color: #212121;
+    /*height: 300px;*/
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+/*footer-end*/

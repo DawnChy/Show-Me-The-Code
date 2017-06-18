@@ -1,0 +1,33 @@
+<div class="container page-header">
+    <div class="row">
+        <h1 class="col-md-6"><span style="color: goldenrod">WEB</span> 前端开发学习交流论坛</h1>
+        <h3 class="col-md-6"><a href="" onclick="checkLogin()"><span class="glyphicon glyphicon-pencil"></span>  试试发表文章吧！</a></h3>
+    </div>
+    <hr>
+    <div ng-controller="articleController as ctrl">
+        <div class="article" ng-repeat="x in ctrl.DATA">
+            <h2 class="article_head">
+                <a href="javascript:;" ng-click="ctrl.findONE(x.article_head)" ng-bind="x.article_head" name="article_head"></a>
+            </h2>
+            <hr>
+            <p class="article_info">
+                <span class="glyphicon glyphicon-user"></span>作者：
+                <b>\{{x.name}}</b>
+                发表于 <b>\{{x.article_info|date:'yyyy'+'-'+'MM'+'-'+'dd'+'-'+'HH:mm:ss'}}</b>
+                &nbsp;&nbsp;<span class="badge" name="count" ng-bind="x.count"></span>
+            </p>
+            <hr>
+            <div class="article_body">
+                <p ng-bind="x.article_body"></p>
+            </div>
+            <button type="button" class="btn btn-info"><a href="javascript:;" ng-click="ctrl.findONE(x.article_head)">继续阅读→</a></button>
+            <div class="show_comment">
+                <p>
+                    <span ng-bind="'评论：'+x.comment_preson"></span>&nbsp;&nbsp;&nbsp;
+                    <span>\{{x.comment_time|date:'yyyy'+'-'+'MM'+'-'+'dd'}}</span>
+                </p>
+                <p ng-bind="x.comment_content"></p>
+            </div>
+        </div>
+    </div>
+</div>

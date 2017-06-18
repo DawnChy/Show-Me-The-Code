@@ -1,0 +1,83 @@
+.page-header .row>h1{
+    text-align: left;
+    display: inline-block;
+}
+.page-header .row>h3{
+    text-align: right;
+    display: inline-block;
+}
+
+.article{
+    width: 800px;
+    margin: 0 auto 30px;
+    padding: 15px 30px;
+    background-color: #eaffeb;
+    border-radius: 10px;
+    box-shadow: #362d2c 10px 10px 20px;
+}
+.article>hr{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.article_head>a{
+    text-decoration: none;
+    color: inherit;
+}
+.article_head>a:hover{
+    color: #8dc35e;
+}
+.article_info{
+    color: #828282;
+}
+.article_info>b{
+    color: #000000;
+}
+.article_info>b:hover{
+    color: #787878;
+    cursor: pointer;
+}
+.article_body{
+
+}
+.article_body>p{
+    display: block;
+    font-size: 15px;
+    color: #777;
+    height: 120px;
+    overflow: hidden;
+    line-height: 30px;
+    white-space: pre;
+    text-overflow:ellipsis;
+}
+.article>button>a{
+    text-decoration: none;
+    color: white;
+}
+/*评论*/
+.show_comment{
+    border: 1px solid black;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+/*article of one*/
+.article_body_one{
+    display: block;
+    font-size: 15px;
+    color: #777;
+    line-height: 30px;
+}
+.comment{
+    width: 800px;
+    margin: 0 auto 30px;
+    padding: 15px 30px;
+    background-color: #dbe4dc;
+    border-radius: 10px;
+    box-shadow: #362d2c 10px 10px 20px;
+}
+.comment textarea{
+    width: 100%;
+    resize: none;
+}

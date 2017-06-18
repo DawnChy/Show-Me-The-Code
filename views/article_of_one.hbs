@@ -1,0 +1,23 @@
+<div class="container page-header" ng-controller="articleOfONECTR as ctrl">
+    <div class="article">
+        <h2 class="article_head" ng-bind="ctrl.dataOFONE.article_head"></h2>
+        <hr>
+        <p class="article_info">
+            <span class="glyphicon glyphicon-user"></span>作者：
+            <b>\{{ctrl.dataOFONE.name}}</b>
+            发表于 <b>\{{ctrl.dataOFONE.article_info|date:'yyyy'+'-'+'MM'+'-'+'dd'+'-'+'HH:mm:ss'}}</b>
+            &nbsp;&nbsp;<span class="badge" ng-bind="ctrl.dataOFONE.count">0</span>
+        </p>
+        <hr>
+        <div class="article_body_one">
+            <p ng-bind="ctrl.dataOFONE.article_body"></p>
+        </div>
+        <button type="button" class="btn btn-info"><a href="/communicate">返回</a></button>
+    </div>
+    <div class="comment">
+        <form class="" action="" method="post">
+            <textarea name="comment_content" rows="8" cols="80"></textarea>
+            <input type="submit" class="btn btn-success" name="" value="评论">
+        </form>
+    </div>
+</div>
